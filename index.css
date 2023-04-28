@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+h1 {
+  font-size: 40px;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24vh;
+}
+#root > div > #icon {
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-image-slice: 1;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #ca262c 0%, #ffffff 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-bottom: 30px;
+  animation-name: lodingicon;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+#root > div > button {
+  margin-top: 30px;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #8a2024;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+}
+#root > div > button:hover {
+  cursor: pointer;
+}
+
+@keyframes lodingicon {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=index.css.map */
